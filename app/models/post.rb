@@ -1,3 +1,4 @@
 class Post < ActiveRecord::Base
-		validates :title, :body, presence: true
-	end
+		has_many :comments
+  validates :title, :body, presence: true
+end
